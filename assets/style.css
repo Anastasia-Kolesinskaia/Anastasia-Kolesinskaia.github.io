@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap');
+
+body {
+    margin: 0;
+    font-size: 20px;
+    background-color: #faf1ee;
+}
+
+body h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 40px;
+    color: #412b1e;
+}
+
+header{
+    background-color: #ededed;
+    text-align: center;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+}
+
+header h1 {
+    color: #191919;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 100px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+header img {
+    height: 200px;
+    aspect-ratio: 1;
+    float:left;
+}
+
+main {
+    line-height: 30px;
+}
+
+main img {
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none; 
+    color: #b47045;
+}
+
+a:hover {
+    color: dimgray;
+}
+
+main .block {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+main .pink img {
+    margin-bottom: -10px;
+    transform: translateX(120px);
+}
+
+main .pink .glasses {
+    position: absolute;
+    width: 200px;
+    transform: translate(-420px, 130px) rotate(-5deg);   
+}
+
+@keyframes glasses {
+    from { 
+        transform: translate(-420px, -100px) scale(0); 
+    }
+    to { 
+        transform: translate(-420px, 130px) scale(1) rotate(-5deg);
+
+    }
+}
+
+main .pink {
+    background-color: #fecdcb;
+    padding: 20px 0px 0px 0px;
+}
+
+footer {
+    background-color: #ededed;
+    text-align: center;
+    font-size: 10px;
+    color: #412b1e;
+    padding: 50px;
+}
+
+footer p {
+    margin: 0;
+}
