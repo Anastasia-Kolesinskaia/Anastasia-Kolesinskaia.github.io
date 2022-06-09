@@ -1,222 +1,100 @@
-* {
-    font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap');
+
+body {
     margin: 0;
+    font-size: 20px;
+    background-color: #faf1ee;
 }
 
-html {
-    background-color: #00c1b5;
-    transition: background-color 0.3s ease;
+body h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 40px;
+    color: #412b1e;
 }
 
-a {
-    text-decoration: none;
+header{
+    background-color: #ededed;
+    text-align: center;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
 }
 
-p {
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 25px;
-}
-
-a:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-header {
-    position: fixed;
-    left: 15px;
-    top: 20px;
+header h1 {
+    color: #191919;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 100px;
+    margin-bottom: 10px;
+    margin-top: 0;
 }
 
 header img {
-    width: 260px;
-    height: auto;
-}
-
-.mailto {
-    position: fixed;
-    right: 15px;
-    top: 20px;
-}
-
-.mailto a {
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
+    height: 200px;
+    aspect-ratio: 1;
+    float:left;
 }
 
 main {
-    height: 100vh;
-    overflow: scroll;
-    scroll-snap-type: y mandatory;
-}
-
-main::-webkit-scrollbar {
-    width: 0;
-    height: 0;
+    line-height: 30px;
 }
 
 main img {
-    width: 420px;
+    max-width: 100%;
 }
 
-.nav_bar {
-    position: fixed;
-    right: 15px;
-    bottom: 20px;
-    font-size: 18px;
-    line-height: 1.6;
+li {
+    list-style-type: none;
 }
 
-.nav_bar li {
-    color: black;
-    list-style: none;
+a {
+    text-decoration: none; 
+    color: #b47045;
 }
 
-.nav_bar a {
-    color: black;
+a:hover {
+    color: dimgray;
 }
 
-.nav_bar li.selected {
-    font-weight: bold;
+main .block {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-section {
-    width: 100%;
-    text-align: center;
-    padding-bottom: 30px;
-    scroll-snap-align: start;
+main .pink img {
+    margin-bottom: -10px;
+    transform: translateX(120px);
 }
 
-.buy_links {
-    margin-top: 20px;
+main .pink .glasses {
+    position: absolute;
+    width: 200px;
+    transform: translate(-420px, 130px) rotate(-5deg);   
 }
 
-.buy_links a {
-    color: white;
-    font-size: 15px;
-    line-height: 22px;  
+@keyframes glasses {
+    from { 
+        transform: translate(-420px, -100px) scale(0); 
+    }
+    to { 
+        transform: translate(-420px, 130px) scale(1) rotate(-5deg);
+
+    }
 }
 
-.selected_stores_links {
-    font-size: 15px;
-    line-height: 22px;
-    margin-top: 20px;
-}
-
-.selected_stores_links a {
-    color: white;
+main .pink {
+    background-color: #fecdcb;
+    padding: 20px 0px 0px 0px;
 }
 
 footer {
-    position: fixed;
-    bottom: 20px;
-    left: 22px;
-    width: 320px;
-    margin-top: 0;
-    line-height: 25px;
+    background-color: #ededed;
+    text-align: center;
+    font-size: 10px;
+    color: #412b1e;
+    padding: 50px;
 }
 
-footer p.about {
+footer p {
     margin: 0;
 }
-
-footer a {
-    text-decoration: underline;
-    color: black;
-}
-
-footer a:hover {
-    text-decoration: none;
-}
-
-.published {
-    font-size: 12px;
-    font-weight: normal;
-    margin-top: 5px;
-}
-
-.privacy {
-    margin-top: 20px;
-}
-
-@media(max-width: 1020px) {
-    html {
-        background-color: fuchsia;
-    }
-
-    header {
-        position: absolute;
-    }
-
-    .mailto {
-        position: relative;
-        text-align: center;
-        right: 0;
-        top: 0;
-        padding: 50px;
-    }
-
-    main {
-        height: auto;
-        overflow: none;
-    }
-
-    section {
-        padding-top: 35px;
-    }
-
-    .nav_bar {
-    display: none;    
-    }
-
-    footer {
-        position: relative;
-        text-align: center;
-        padding-top: 30px;
-        padding-left: 5%;
-        padding-right: 5%;
-        bottom: 0;
-        left: 0;
-        width: 90%;
-        margin: 0;
-    }
-    
-}
-
-@media(max-width: 765px) {
-    html {
-        background-color: fuchsia;
-    }
-    
-    header {
-        position: absolute
-    }
-
-    header img {
-        width: 160px;
-    }
-
-    .mailto {
-        position: relative;
-        text-align: center;
-        right: 0;
-        top: 0;
-        padding: 50px;
-    }
-
-    footer {
-        position: relative;
-        text-align: center;
-        padding-left: 5%;
-        padding-right: 5%;
-        bottom: 0;
-        left: 0;
-        width: 90%;
-        margin: 0;
-    }
-
-}
-
