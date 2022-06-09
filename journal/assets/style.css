@@ -187,10 +187,6 @@ footer a:hover {
 }
 
 @media(max-width: 765px) {
-    html {
-        background-color: fuchsia;
-    }
-    
     header {
         position: absolute
     }
