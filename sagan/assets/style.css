@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Padauk", 'roboto';
+
+}
+
+@font-face {
+    font-family: "Padauk"; 
+    src: url(./fonts/Padauk/Padauk-Regular.ttf) format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+
+@font-face {
+    font-family: "Caudex"; 
+    src: url(./fonts/Caudex/Caudex-Regular.ttf) format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    line-height: 27px;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    color: white;
+    background-color: #111;
+    font-family: "satisfy", 'roboto';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 50px;
+}
+
+.shapes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shapes span {
+    opacity: 0;
+}
+
+.shapes span.active {
+    opacity: 100;
+}
+
+.work::after {
+    position: relative;
+    display: inline-block;
+    content: '';
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-image: url(./icon/arrow.svg);
+    width: 9px;
+    height: 16px;
+    top: 2px;
+    background-size: 9px 16px;
+    margin-left: 1rem;
+}
+
+#square {
+    position: absolute;
+    display: inline-block;
+    width: 1.8rem;
+	height: 1.8rem;
+	background: rgb(208, 44, 44);
+}
+
+#triangle {
+    position: absolute;
+    display: inline-block;
+    width: 0;
+	height: 0;
+	border-left: 1rem solid transparent;
+	border-right: 1rem solid transparent;
+	border-top: 1.8rem solid yellow;
+}
+
+#dot {
+    position: relative;
+    display: inline-block;
+	width: 1.8rem;
+	height: 1.8rem;
+	background: rgb(53, 120, 244);
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;;
+	border-radius: 100%;;
+}
+
+#lable {
+    font-family: "Caudex";
+    font-size: 2rem; 
+    margin-left: 1rem;
+    transition: opacity 900ms;
+}
+
+h1 {
+    font-family: "Caudex";
+    font-size: 7vw;
+    line-height: 7vw;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+main {
+    opacity: 0;
+    transition: opacity 900ms;
+}
+
+main.active {
+    opacity: 100;
+}
+
+main img {
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    object-fit: cover;
+}
+
+#img_container img {
+    display: none;
+}
+
+#img_container img.active {
+    display: block;
+}
+
+.flex_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+#img_container {
+    width: 1000px;
+    height: 600px;
+}
+
+article {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: left; 
+}
+
+h2 {
+    font-size: 4.5vw;
+    line-height: 5vw;
+    color: white;
+    padding-bottom: 3rem;
+}
+
+article p {
+    font-size: 2.5vw;
+    line-height: 3.5vw;
+}
+
+#сlients_list {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-auto-rows: auto;
+    font-size: 1.7vw;
+    line-height: 3vw;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#сlients_list li:hover {
+    cursor: pointer;
+}
+
+
+.select p {
+    color: #6a6a6a;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+footer p {
+    font-size: 5vw;
+    line-height: 5vw;
+}
+
+#mail a {
+    color: rgb(53, 120, 244);
+    font-size: 5vw;
+    line-height: 5vw;
+    font-weight: bold;
+    font-family: "Caudex"; 
+ }
+
+.social ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social li {
+    color: #6a6a6a;
+    font-size: 1.3rem;
+}
+
+.social a>img {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 16px;
+}
+
+@media(max-width:800px) {
+
+    h1 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    }
+
+    #img_container {
+        width: 100%;
+    }
+
+    main img {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 30rem;
+        object-fit: cover;
+    }
+
+    article {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 0;
+        text-align: left; 
+    }
+
+    article p {
+        font-size: 3.5vw;
+        line-height: 3.5vw;
+    }
+
+    #сlients_list {
+        display: none;
+    }
+
+    footer {
+        display: block;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    footer p {
+        font-size: 7vw;
+        line-height: 7vw;
+    }
+
+    #mail a {
+        color: rgb(53, 120, 244);
+        font-size: 7vw;
+        line-height: 7vw;
+        font-weight: bold;
+        font-family: "Caudex"; 
+     }
+
+     .social ul {
+        display: none;
+     }
+
+     .social a>img {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media(max-width:370px) {
+
+    #lable {
+        display: none;
+    }
+
+    h1 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    }
+
+    #img_container {
+        width: 100%;
+    }
+
+    main img {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 30rem;
+        object-fit: cover;
+    }
+
+    article {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 0;
+        text-align: left; 
+    }
+
+    article p {
+        font-size: 3.5vw;
+        line-height: 3.5vw;
+    }
+
+    #сlients_list {
+        display: none;
+    }
+
+    footer {
+        display: block;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    footer p {
+        font-size: 7vw;
+        line-height: 7vw;
+    }
+
+    #mail a {
+        color: rgb(53, 120, 244);
+        font-size: 7vw;
+        line-height: 7vw;
+        font-weight: bold;
+        font-family: "Caudex"; 
+     }
+
+     .social ul {
+        display: none;
+     }
+
+     .social a>img {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
