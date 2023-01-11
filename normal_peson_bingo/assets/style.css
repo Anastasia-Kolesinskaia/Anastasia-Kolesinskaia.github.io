@@ -1,0 +1,82 @@
+body {
+    background-color: white;
+    color: black;
+      font-family: 'Oswald', sans-serif;
+  }
+  
+  header {
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    padding: 15px;
+    color: #8c6b48;
+    background-color: white;
+  }
+  
+  h2 {
+    font-size: 3rem;
+    color: #8c6b48;
+    margin-left: 10px;
+  }
+
+  h3 {
+    font-size: 15px;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+
+  }
+
+  .bingo {
+    position: absolute;
+    left: -12.5em;
+    transition: left 500ms linear 0.2s;
+  }
+  
+  .bingo.shown{
+    left: 0;
+  }
+
+  .winner {
+    position: absolute;
+    left: -11em;
+    transition: left 500ms linear 0.2s;
+  }
+
+  .winner.shown {
+    left: 0;
+  }
+
+  th {
+    border: 2px solid #8c6b48;
+  }
+  
+  table {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  td {
+    border: 2px solid #8c6b48;
+    width: 130px;
+    height: 130px;
+  }
+  
+  .container {
+    max-width: 940px;
+    margin: 0 auto;
+    height: 800px;
+  }
+  
+  .left {
+    width: 150px;
+  }
+
+  td.active {
+    background-color: black;
+    color: white;
+  }
+  
